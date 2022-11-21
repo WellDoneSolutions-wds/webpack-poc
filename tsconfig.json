@@ -1,19 +1,41 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "lib": ["DOM", "ESNext"],
-    "jsx": "react-jsx",
-    "noEmit": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext", "ES2022"],
     "allowJs": true,
-    "checkJs": true
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "useDefineForClassFields": false,
+    "emitDecoratorMetadata": true
   },
-  "include": ["src/**/*"]
+  "emitDecoratorMetadata": true,
+  "include": ["src"],
+  "compileOnSave": false,
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }
